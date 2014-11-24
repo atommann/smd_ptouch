@@ -31,7 +31,7 @@ GetOptions(
     "a" => \$all,
     ) or die "invalid options";
 
-my $yaml = YAML::LoadFile("resistors_e24.yaml") or die "couldn't read resistors.yaml";
+my $yaml = YAML::LoadFile("resistors_e24.yaml") or die "couldn't read resistors_e24.yaml";
 my $height = pixels($tapewidth);
 
 # my $thickness = 1;
