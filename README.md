@@ -13,7 +13,7 @@ Photo: [labels for chip resistors](https://www.flickr.com/photos/atommann/156829
 
 ### Print
 
-`./print_png.prl -P Brother_PT-1230PC -w 6 out/10k_1.png`
+`./print_png.pl -P Brother_PT-1230PC -w 6 out/10k_1.png`
 
 ## Prerequisites
 
