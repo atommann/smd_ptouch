@@ -8,8 +8,8 @@ Photo: [labels for chip resistors](https://www.flickr.com/photos/atommann/156829
 
 ### Generate labels
 
-* Command `./smd_resistor_label.pl -c 10k_1` will generate label for 10k-30k.
-* Command `./smd_resistor_label.pl -a` will generate labels for all resistors in resistors_e24.yaml
+* Command `./smd_resistor_label.pl -f resistors_e24_0402.yaml -c 10k_1` will generate label for 10k-30k.
+* Command `./smd_resistor_label.pl -f resistors_e24_0402.yaml -a` will generate labels for all resistors in resistors_e24_0402.yaml
 
 ### Print
 

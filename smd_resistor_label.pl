@@ -22,16 +22,18 @@ my $offset = 1.0; # mm
 my $force = 0;
 my $all = 0;
 my $chip;
+my $file;
 
 GetOptions(
     "w=n" => \$tapewidth,  # width of tape
     "o=s" => \$outfile,
     "force" => \$force,
     "c=s" => \$chip,
+    "f=s" => \$file,
     "a" => \$all,
     ) or die "invalid options";
 
-my $yaml = YAML::LoadFile("resistors_e24_0402.yaml") or die "couldn't read resistors_e24_0402.yaml";
+my $yaml = YAML::LoadFile($file) or die "couldn't read $file";
 my $height = pixels($tapewidth);
 
 # my $thickness = 1;
@@ -72,6 +74,7 @@ __END__
    --help            brief help message
    -w n              specify tape width in mm
    -c chip           chip name as specified in chips.yaml
+   -f file           specify the YAML file
    -a                generate pngs for all chips in the file
 
 output placed in out/ directory.
